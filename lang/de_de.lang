@@ -1,16 +1,7 @@
-blaupause_title = Blaupause
+testimonial_title = Kundenstimmen
+testimonial_table = ⭐ Kundenstimmen
+testimonial_settings = Einstellungen
+testimonial_docs = Hilfe
 
-blaupause_table = Blaupause
-blaupause_settings = Einstellungen
-blaupause_docs = Hilfe
-
-# FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden
-
-# Konfigurationsformulare
-blaupause_config = Einstellungen
-blaupause_config_mytextfield_label = Test-Feld
-blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
-
-# YForm Tablelen-Übersetzung
-blaupause_table_name_label = Name
-blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+# YForm Tabellen-Übersetzung
+testimonial_author = Autor
