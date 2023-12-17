@@ -9,6 +9,7 @@ requires:
     redaxo: ^5.13              
     packages:                  
         yform: "^4"
+        yform_field: ">=3"
 
 page:
     title: translate:testimonial_title    
