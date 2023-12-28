@@ -7,7 +7,7 @@ class testimonial extends \rex_yform_manager_dataset
         return $this->getValue('author');
     }
 
-    public function getTestimonial(): string
+    public function getText(): string
     {
         return $this->getValue('text');
     }
@@ -15,5 +15,10 @@ class testimonial extends \rex_yform_manager_dataset
     public function getDate(): string
     {
         return $this->getValue('date');
+    }
+
+    public static function findOnline(): ?rex_yform_manager_collection
+    {
+        self::query()->where('status', 1, ">=")->find();
     }
 }
