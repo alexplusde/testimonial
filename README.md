@@ -1,66 +1,46 @@
 # Testimonial-Addon - Rezensionen verwalten und ausgeben
 
-Mit diesem Addon können Rezensionen, Kundenstimmen und Bewerungen anhand von YForm und YOrm im Backend verwaltet und im Frontend ausgegeben werden. Auf Wunsch auch multidomainfähig und mehrsprachig.
-
-* Vollständig mit YForm umgesetzt: Alle Features und Anpassungsmöglichkeiten von YForm verfügbar
-* Einfach: Die Ausgabe erfolgt über rex_sql oder objektorientiert über YOrm
-* Sinnvoll: Nur ausgewählte Rollen/Redakteure haben Zugriff
-* Bereit für Multidomain-Newsverwaltung mit YRewrite (+ Addon yform_field)
-* Bereit für mehrsprachige Websites: Reiter für Sprachen auf Wunsch anzeigen oder ausblenden (um eigenes Feld erweitern)
-* Bereit für viel mehr: Kompatibel zum URL2-Addon
-
-> Tipp: Neues arbeitet hervorragend zusammen mit den Addons yform_usability oder yform_field
-
-Steuere eigene Verbesserungen dem GitHub-Repository von neues bei. Oder unterstütze dieses Addon: Mit einer Beauftragung unterstützt du die Weiterentwicklung dieses AddOns
-
 ## Features
 
-Installation
-Im REDAXO-Installer das Addon neues herunterladen und installieren. Anschließend erscheint im Hauptmenü ein neuer Menüpunkt "Kundenstimmen".
+### `package.yml`
 
-## Nutzung im Frontend
+Bei Bedarf Abhängigkeiten von REDAXO-AddOns (sog. packages) eintragen, Backend-Seiten aus oder einblenden, vordefinierte Konfigurationswerte setzen.
 
-### Die Klasse `testimonial`
+### `boot.php`
 
-#### Alle Einträge erhalten
+Gängige Code-Beispiele wie der Syntax zum Überprüfen einer Addon-Installation, der Unterscheidung zwischen Front- und Backend, dem Registrieren eigener YForm-Dataset-Klasen.
 
-```php
-$testimonials = testimonial::query()->find(); // YOrm-Standard-Methode zum Finden von Einträgen, lässt sich mit where(), Limit(), etc. einschränken und Filtern.
-$testimonials = testimonial::findOnline(); // Alle Online-Einträge
-```
+### `install.php`
 
-#### Beispiel-Ausgabe einer Kundenstimme
+Gängige Code-Beispiele zum Installieren von YForm-Tablesets, Meta-Infofeldern und dem Verwenden von Extension Points, Cronjobs u.a.
 
-```php
+### `dataedit.php` für YForm-Datentabellen
 
-$testimonial = testimonial::get(3); // Kundenstimme mit der ID=3
-// dump($testimonial);
+Dein Addon nutzt YForm als Ausgangsbasis? Nutze YForm-Tabellen innerhalb deiner Addon-Seiten via https://friendsofredaxo.github.io/tricks/addons/yform/im-addon
 
-echo $testimonial->getAuthor();
-echo $testimonial->getDomain();
-echo $testimonial->getText();
-echo $testimonial->getImage();
-echo $testimonial->getStatus();
-```
+### `update.php`
 
+Gängige Code-Beispiele, die in Abhängigkeit der Vorgänger-Version deines Addons ausgeführt werden.
 
-## URL2-Profile
+### `uninstall.php`
 
-### Kundenstimmen einer Domain
+Alle Code-Beispiele, die du in der `install.php` nutzt, können hier wieder rückkgängig gemacht werden.
 
-Lege ein passendes URL-Profil auf die Datenbanktabelle an, um Kundenstimmen als einzelne Seiten aufrufbar zu machen. Weitere Informationen dazu im URL-Addon.
+### `lang/`
 
-## Import
+testimonial für deine eigene Sprachdatei. Beginne die Addon-Entwicklung direkt so, dass weitere Sprachen ohne Anpassungen ergänzt werden können.
 
-### Import via CSV
+### `fragmente/`
 
-Testimonial basiert auf YForm. Importiere deine Einträge bequem per CSV, wie du es von YForm kennst.
+testimonial für die Nutzung eigener Fragmente.
 
-## Export
+### Docs-Seite
 
-### Export via CSV
+Passe diese README.md-Datei an und spiele sie als Hilfe-Seite zu deinem Addon aus. Halte dich an die Struktur dieser README.md-Datei für deine eigenen Addons, indem du die wichtigsten Funktionen, Klassen und Methoden sowie den Installationsprozess und die Funktionsweise erklärst. Mit Verweis auf die Autoren, Projekt-Lead und Credits.
 
-Testimonial basiert auf YForm. Exportiere deine Einträge bequem per CSV, wie du es von YForm kennst.
+### Einstellungs-Seite
+
+Beginne mit einem Konfigurations-Formular, das bereits best practice in REDAXO umsetzt - mit Links zu den wichtigsten API-Docs.
 
 ## Lizenz
 
@@ -68,16 +48,16 @@ MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/testimonial/blob/ma
 
 ## Autoren
 
-### **Projekt-Lead**
+**Addon-Vorlage von**
+**Alexander Walther**  
+http://www.alexplus.de  
+https://github.com/alexplusde  
 
-**Paul Götz**
-<http://www.paulgoetz.de>
-<https://github.com/schorschy>
+**Paul Götz**  
+http://www.paulgoetz.de  
+https://github.com/schorschy  
 
-### Addon-Vorlage von / erstellt für
-
-**Alexander Walther**
-<http://www.alexplus.de>
-<https://github.com/alexplusde>
+**Projekt-Lead**  
+[Paul Götz](https://github.com/schorschy)
 
 ## Credits
