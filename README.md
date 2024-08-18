@@ -2,6 +2,8 @@
 
 Mit diesem Addon können Rezensionen, Kundenstimmen und Bewerungen anhand von YForm und YOrm im Backend verwaltet und im Frontend ausgegeben werden. Auf Wunsch auch multidomainfähig und mehrsprachig.
 
+## Features
+
 * Vollständig mit YForm umgesetzt: Alle Features und Anpassungsmöglichkeiten von YForm verfügbar
 * Einfach: Die Ausgabe erfolgt über rex_sql oder objektorientiert über YOrm
 * Sinnvoll: Nur ausgewählte Rollen/Redakteure haben Zugriff
@@ -11,11 +13,10 @@ Mit diesem Addon können Rezensionen, Kundenstimmen und Bewerungen anhand von YF
 
 > Tipp: Neues arbeitet hervorragend zusammen mit den Addons yform_usability oder yform_field
 
-Steuere eigene Verbesserungen dem GitHub-Repository von neues bei. Oder unterstütze dieses Addon: Mit einer Beauftragung unterstützt du die Weiterentwicklung dieses AddOns
+Steuere eigene Verbesserungen dem GitHub-Repository von neues bei. Oder unterstütze dieses Addon: Mit einer Beauftragung unterstützt du die Weiterentwicklung dieses AddOns.
 
-## Features
+## Installation
 
-Installation
 Im REDAXO-Installer das Addon neues herunterladen und installieren. Anschließend erscheint im Hauptmenü ein neuer Menüpunkt "Kundenstimmen".
 
 ## Nutzung im Frontend
