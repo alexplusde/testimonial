@@ -1,7 +1,25 @@
 testimonial_title = Kundenstimmen
-testimonial_table = ⭐ Kundenstimmen
-testimonial_settings = Einstellungen
+testimonial_table = 💬 Kundenstimmen
+
 testimonial_docs = Hilfe
 
 # YForm Tabellen-Übersetzung
 testimonial_author = Autor
+testimonial_image = Bild
+testimonial_uuid = UUID
+testimonial_text = Zitat
+testimonial_date = Datum
+testimonial_prio = Reihenfolge
+testimonial_project_id = Projekt
+testimonial_createuser = Ersteller
+testimonial_createdate = Erstellt am
+testimonial_updateuser = Aktualisiert von
+testimonial_updatedate = Aktualisiert am
+testimonial_status = Status
+testimonial_status_draft = 🟨 Entwurf
+testimonial_status_published = ✅ Veröffentlicht
+
+testimonial_author_validate = Bitte geben Sie den Autor an.
+testimonial_image_validate = Bitte geben Sie ein Bild an.
+testimonial_date_validate = Bitte geben Sie ein Datum an.
+testimonial_status_validate = Bitte geben Sie einen Status an.

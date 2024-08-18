@@ -20,7 +20,7 @@ Im REDAXO-Installer das Addon neues herunterladen und installieren. Anschließen
 
 ## Nutzung im Frontend
 
-### Die Klasse `Alexplusde\Testimonial\Entry`
+### Die Klasse `testimonial`
 
 #### Alle Einträge erhalten
 
@@ -61,19 +61,15 @@ Testimonial basiert auf YForm. Importiere deine Einträge bequem per CSV, wie du
 
 Testimonial basiert auf YForm. Exportiere deine Einträge bequem per CSV, wie du es von YForm kennst.
 
-## Lizenz
-
-MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/testimonial/blob/master/LICENSE.md)  
-
 ## Autoren
 
 **Alexander Walther**
 <http://www.alexplus.de>
 <https://github.com/alexplusde>
 
-**Paul Götz**
-<http://www.paulgoetz.de>
-<https://github.com/schorschy>
+**Paul Götz**  
+<http://www.paulgoetz.de>  
+<https://github.com/schorschy>  
 
 ### **Projekt-Lead**
 
@@ -87,4 +83,6 @@ MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/testimonial/blob/ma
 <http://www.alexplus.de>
 <https://github.com/alexplusde>
 
-## Credits
+## Lizenz
+
+MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/testimonial/blob/master/LICENSE.md)  
