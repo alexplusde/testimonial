@@ -20,20 +20,20 @@ Im REDAXO-Installer das Addon neues herunterladen und installieren. Anschließen
 
 ## Nutzung im Frontend
 
-### Die Klasse `testimonial`
+### Die Klasse `Alexplusde\Testimonial\Entry`
 
 #### Alle Einträge erhalten
 
 ```php
-$testimonials = testimonial::query()->find(); // YOrm-Standard-Methode zum Finden von Einträgen, lässt sich mit where(), Limit(), etc. einschränken und Filtern.
-$testimonials = testimonial::findOnline(); // Alle Online-Einträge
+use Alexplusde\Testimonial\Entry;
+$testimonials = Entry::query()->find(); // YOrm-Standard-Methode zum Finden von Einträgen, lässt sich mit where(), Limit(), etc. einschränken und Filtern.
+$testimonials = Entry::findOnline(); // Alle Online-Einträge
 ```
 
 #### Beispiel-Ausgabe einer Kundenstimme
 
 ```php
-
-$testimonial = testimonial::get(3); // Kundenstimme mit der ID=3
+$testimonial = Entry::get(3); // Kundenstimme mit der ID=3
 // dump($testimonial);
 
 echo $testimonial->getAuthor();
@@ -42,7 +42,6 @@ echo $testimonial->getText();
 echo $testimonial->getImage();
 echo $testimonial->getStatus();
 ```
-
 
 ## URL2-Profile
 
@@ -68,11 +67,19 @@ MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/testimonial/blob/ma
 
 ## Autoren
 
-### **Projekt-Lead**
+**Alexander Walther**
+<http://www.alexplus.de>
+<https://github.com/alexplusde>
 
 **Paul Götz**
 <http://www.paulgoetz.de>
 <https://github.com/schorschy>
+
+### **Projekt-Lead**
+
+**Alexander Walther**
+<http://www.alexplus.de>
+<https://github.com/alexplusde>
 
 ### Addon-Vorlage von / erstellt für
 
