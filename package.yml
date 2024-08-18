@@ -1,33 +1,30 @@
-package: testimonial 
-version: '1.0.0-dev' 
-author: 'Alexander Walther, Paul Götz' 
-supportpage: https://github.com/alexplusde/testimonial 
+package: testimonial
+version: '2.0.0'
+author: 'Alexander Walther, Paul Götz'
+supportpage: https://github.com/alexplusde/testimonial
 
-requires:                       
+requires:
     php:
-        version: '>7.3,<9'
-    redaxo: ^5.13              
-    packages:                  
-        yform: "^4"
-        yform_field: ">=3"
+        version: '^8.1'
+    redaxo: ^5.17
+    packages:
+        yform/manager: "^4"
+        yform_field: "^2.5"
 
 page:
-    title: translate:testimonial_title    
+    title: translate:testimonial_title
     icon: rex-icon fa-star
-
-pages:
-    testimonial: 
-        title: translate:testimonial_title
-        icon: rex-icon fa-star  
-        perm: testimonial[]               
-        subpages:                   
-            table:
-                title: translate:testimonial_table
-                icon: rex-icon fa-star
-                perm: testimonial[]
-    docs:
-        title: translate:testimonial_docs
-        subPath: README.md  
-        icon: rex-icon fa-info-circle
-        itemClass: pull-right
-        perm: testimonial[docs]
+    perm: testimonial[]
+    block: system
+    prio: 19
+    subpages:
+        entry:
+            title: translate:testimonial_title
+            icon: rex-icon fa-star
+            perm: testimonial[]
+        docs:
+            title: translate:testimonial_docs
+            subPath: README.md
+            icon: rex-icon fa-info-circle
+            itemclass: pull-right
+            perm: testimonial[docs]
